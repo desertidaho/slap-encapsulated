@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('img/scene.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+  overflow: hidden;
+}
+
+.name,
+.modal-panda {
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+.btn {
+  box-shadow: 1px 1px rgb(131, 130, 130);
+  border: 1px solid rgb(53, 52, 52);
+}
+
+.progress {
+  width: 25vw;
+}
+
+.panda {
+  width: 200px;
+  height: 280px;
+}
+
+.img-margin {
+  position: relative;
+  z-index: 1;
+  margin-top: 22vh;
+}
+
+#attackImg {
+  position: absolute;
+  z-index: 2;
+  margin-top: -8vh;
+  margin-left: 6vw;
+  height: 200px;
+  display: none;
+}
+
+#attackMods {
+  position: absolute;
+  z-index: 2;
+  margin-top: -8vh;
+  margin-left: -12vw;
+  height: 200px;
+  display: none;
+}
+
+.my-modal {
+  position: absolute;
+}
+
+.modal {
+  position: relative;
+}
+
+#tour1 {
+  margin-top: 32vh;
+  margin-left: 30vw;
+}
+
+#tour2 {
+  margin-left: -22vw;
+}
+
+.arrow {
+  margin-right: 13vw !important;
+}
