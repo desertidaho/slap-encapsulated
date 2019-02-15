@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 
-<body onload="startModal()">
+<body <!--onload="startModal()" --> >
   <div class="container-fluid">
 
     <header class="mt-3">
@@ -169,12 +169,13 @@
       <div class="row">
         <div class="col-1 d-flex flex-column justify-content-end" id="items">
           <div class="">
-            <button class="btn btn-danger my-3 modifiers" id="firework" onclick="modifyItem('firework')">Firework -3
+            <button class="btn btn-danger my-3 modifiers" id="firework" onclick="app.controllers.targetController.item('firework')">Firework
+              -3
             </button>
-            <button class="btn btn-danger my-3 modifiers" id="ninjaStar" onclick="modifyItem('ninjaStar')">Ninja
+            <button class="btn btn-danger my-3 modifiers" id="ninjaStar" onclick="app.controllers.targetController.item('ninjaStar')">Ninja
               Star
               -5</button>
-            <button class="btn btn-success my-3 modifiers" id="noodles" disabled="true" onclick="eat()">Noodles
+            <button class="btn btn-success my-3 modifiers" id="noodles" onclick="app.controllers.targetController.eat('noodles')">Noodles
               +10</button>
           </div>
         </div>
@@ -188,10 +189,13 @@
 
     <footer class="row mt-3">
       <div class="col-12 d-flex justify-content-center">
-        <button class="btn btn-warning mx-3" id="slap1" onclick="attack('slap')">Slap -1</button>
-        <button class="btn btn-warning mx-3" id="punch5" onclick="attack('punch')">Punch -5</button>
-        <button class="btn btn-warning mx-3" id="kick10" onclick="attack('kick')">Kick -10</button>
-        <button class="btn btn-info mx-3" id="" onclick="restart()">Restart</button>
+        <button class="btn btn-warning mx-3" id="slap1" onclick="app.controllers.targetController.attack('slap')">Slap
+          -1</button>
+        <button class="btn btn-warning mx-3" id="punch5" onclick="app.controllers.targetController.attack('punch')">Punch
+          -5</button>
+        <button class="btn btn-warning mx-3" id="kick10" onclick="app.controllers.targetController.attack('kick')">Kick
+          -10</button>
+        <button class="btn btn-info mx-3" id="" onclick="app.controllers.targetController.reset()">Reset</button>
       </div>
     </footer>
 
@@ -203,7 +207,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-  <script src="app/main.js"></script>
+  <script type="module" src="app/main.js"></script>
 
 </body>
 
