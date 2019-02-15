@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   height: 100vh;
-  background: url('img/scene.jpg');
+  background: url('/assets/img/scene.jpg');
   background-size: cover;
   background-position-y: bottom;
   overflow: hidden;
