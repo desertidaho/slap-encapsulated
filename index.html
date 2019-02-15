@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 
-<body <!--onload="startModal()" --> >
+<body>
   <div class="container-fluid">
 
     <header class="mt-3">
@@ -175,7 +175,7 @@
             <button class="btn btn-danger my-3 modifiers" id="ninjaStar" onclick="app.controllers.targetController.item('ninjaStar')">Ninja
               Star
               -5</button>
-            <button class="btn btn-success my-3 modifiers" id="noodles" onclick="app.controllers.targetController.eat('noodles')">Noodles
+            <button class="btn btn-success my-3 modifiers" id="noodles" disabled="true" onclick="app.controllers.targetController.eat('noodles')">Noodles
               +10</button>
           </div>
         </div>
